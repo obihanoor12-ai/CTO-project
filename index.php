@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CTO Website</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="navbar">
+    <div class="logo">CTO</div>
+    <nav>
+      <ul>
+        <li><a href="index.php">Home</a></li>
+        <li><a href="viewpost.php">View Post</a></li>
+        <li><a href="register2.php">Register</a></li>
+        <li><a href="login2.php">Login</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="hero">
+    <div class="hero-image">
+      <img src="uploads/bird5.jpg" alt="Bird Image">
+      <div class="fade-overlay"></div>
+    </div>
+
+    <div class="hero-text">
+      <h1>Centrala Trust for Ornithology</h1>
+      <p>Dedicated to restoring nature in Central areas by encouraging birds and wildlife to thrive.</p>
+    </div>
+  </div>
+
+  <section class="how-it-works">
+    <h2>How It Works</h2>
+    <p class="how-subtext">A simple guide to help you register, view posts, create posts, and manage your profile.</p>
+
+    <div class="how-steps">
+
+      <div class="how-card">
+        <h3>1.View Posts (No Account Needed)</h3>
+        <p>You can freely browse all posts on the <a href="viewpost.php">View Post</a> page without registering. All user submissions are publicly visible.</p>
+      </div>
+
+      <div class="how-card">
+        <h3>2.Register to Create Posts</h3>
+        <p>If you wish to publish your own content, visit the <a href="register2.php">Register</a> page and create your account.</p>
+      </div>
+
+      <div class="how-card">
+        <h3>3.Login to Access Your Features</h3>
+        <p>After registering, log in through the <a href="login2.php">Login</a> page. Once logged in, your posting options become available.</p>
+      </div>
+
+      <div class="how-card">
+        <h3>4.Create a Post</h3>
+        <p>Go to New Post and submit content. Your post will immediately appear on the View Post page alongside others.</p>
+      </div>
+
+      <div class="how-card">
+        <h3>5.Edit or Delete Your Posts</h3>
+        <p>Only you can modify or remove your posts. Visit your Profile to edit or delete your submissions.</p>
+      </div>
+
+      <div class="how-card">
+        <h3>6.Create More & Keep Exploring!</h3>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="about">
+    <div class="about-box">
+      <h2>About Us</h2>
+      <p>We are a non-profit organization focused on creating awareness, conducting research, and building safer habitats for birds and wildlife across the region. Our mission is to reconnect people with nature and encourage biodiversity through sustainable environmental efforts.</p>
+    </div>
+  </section>
+
+  <div class="quote">
+    “Every tree, garden, and sky can become a home for life once again.”
+  </div>
+
+  <section class="projects">
+    <h2>Key Projects</h2>
+    <div class="project-cards">
+      <div class="card">
+        <h3>Urban Bird Habitats</h3>
+        <p>Developing green spaces and nesting areas for urban bird species.</p>
+      </div>
+      <div class="card">
+        <h3>Wetland Restoration</h3>
+        <p>Reviving natural wetlands to support migratory and native birds.</p>
+      </div>
+      <div class="card">
+        <h3>Community Awareness</h3>
+        <p>Educating communities to protect and support local biodiversity.</p>
+      </div>
+    </div>
+  </section>
+
+ <footer>
+  <div class="footer-container">
+  <div class="footer-section">
+  <h3>Quick Links</h3>
+  <p><a href="contact.php">Contact Us</a></p>
+  <p><a href="about.php">About Us</a></p>
+  <p><a href="location.php">Location</a></p>
+  <p><a href="viewpost.php">View Posts</a></p>
+  <p><a href="index.php">Home</a></p>
+</div>
+
+    <div class="footer-section">
+      <h3>About CTO</h3>
+      <p>Dedicated to preserving bird life and restoring natural habitats across Central regions.</p>
+    </div>
+
+    <div class="footer-section">
+      <h3>Contact Us</h3>
+      <p>Email: <a href="mailto:contact.obiha@cto.org">contact.obiha@cto.org</a></p>
+      <p>Phone: <a href="tel:+97 398734562">+97 398734562</a></p>
+</div>
+
+    <div class="footer-section">
+      <h3>Location</h3>
+      <p>240 Evergreen Trail Road, Highland Eco Region, New Zealand</p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2025 Centrala Trust for Ornithology | All Rights Reserved | Developed by Obiha
+  </div>
+</footer>
+
+  <?php include("dbconnection.php"); ?>
+</body>
+</html>

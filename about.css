@@ -1,0 +1,225 @@
+/* GENERAL */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f4f3; /* same as contact page */
+    margin: 0;
+    padding: 0;
+    color: #4d5962;
+}
+.navbar {
+  background: linear-gradient(90deg, #b6c6b6, #c6e8d0);
+  padding: 18px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-shadow: 0 3px 8px rgba(3, 73, 101, 0.15);
+}
+
+.logo {
+  position: absolute;
+  left: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 34px;
+  font-weight: 800;
+  color: #10120f;
+  letter-spacing: 2px;
+}
+
+.navbar nav {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.navbar nav ul {
+  list-style: none;
+  display: flex;
+  gap: 45px;
+}
+
+.navbar nav ul li a {
+  color: #121311;
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.navbar nav ul li a:hover {
+  color: #133e26;
+  text-shadow: 0px 0px 6px rgba(201, 233, 191, 0.5);
+}
+/* HEADER SECTION */
+.about-header {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+}
+
+.about-header h1 {
+    font-size: 36px;
+    font-weight: 600;
+    color: #2b3a2b; /* same as contact page */
+}
+
+.about-header p {
+    font-size: 16px;
+    margin-top: 10px;
+    color: #5f6f5f;
+}
+
+/* MAIN CONTAINER */
+.about-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+}
+
+/* LEFT SECTION: TEXT */
+.about-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.text-box {
+    background: #e8f3ea; /* light green box */
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.text-box h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #2b3a2b; /* heading color consistent */
+    margin-bottom: 10px;
+}
+
+.text-box p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #4d5962;
+}
+
+/* RIGHT SECTION: IMAGES */
+.about-images {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.image-box {
+    background: #ffffff; /* white box for images */
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+.image-box img {
+    width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.image-box p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #5f6f5f;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .about-container {
+        flex-direction: column;
+    }
+}
+
+footer {
+  background-color: #101511;
+  color: #ffffff;
+  padding: 55px 20px; /* slightly more premium spacing */
+  margin-top: 60px;
+}
+/* FOOTER */
+footer {
+  background-color: #101511;
+  color: #ffffff;
+  padding: 40px 20px;
+  margin-top: 60px;
+}
+
+/* Container for the 4 sections */
+.footer-container {
+  display: flex;
+  justify-content: space-between; /* equal spacing between all items */
+  align-items: flex-start;
+  gap: 60px;
+  flex-wrap: nowrap;              /* stop wrapping → all four in one line */
+  max-width: 1200px;
+  margin: 0 auto 25px auto;
+}
+
+/* Each section */
+.footer-section {
+  flex: 1;                        /* all sections same width */
+  min-width: 0;                   /* prevents overflow */
+  text-align: left;
+}
+
+/* Titles */
+.footer-section h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #c8e6c9;
+}
+
+/* Paragraphs */
+.footer-section p {
+  font-size: 0.95rem;
+  color: #e8f5e9;
+  margin-bottom: 6px;
+}
+
+/* Links */
+.footer-section a {
+  color: #e8f5e9;
+  text-decoration: none;
+  transition: 0.3s ease;
+  font-size: 0.95rem;
+}
+
+.footer-section a:hover {
+  color: #c8e6c9;
+  text-decoration: underline;
+}
+
+/* Bottom strip */
+.footer-bottom {
+  text-align: center;
+  padding-top: 10px;
+  border-top: 1px solid rgba(255,255,255,0.2);
+  font-size: 0.9rem;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;   /* mobile should stack */
+  }
+
+  .footer-section {
+    width: 90%;
+    text-align: center;
+  }
+}
